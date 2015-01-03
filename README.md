@@ -15,9 +15,21 @@ cabal install --only-dependencies
 How to run test
 -------------
 
+### run all test.
+
 ```sh
 
-cabal run
+cabal test
+
+```
+
+### run only one test.
+
+```sh
+
+cabal test test4
+
+cabal test test5
 
 ```
 
