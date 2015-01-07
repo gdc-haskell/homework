@@ -21,9 +21,6 @@ If you want to track upstream tests, add homework-tests repo as a subtree.
 git remote add gdc-haskell-homework-tests https://github.com/gdc-haskell/homework-tests.git
 git fetch gdc-haskell-homework-tests master
 
-# Add homework-tests ad subtree
-git subtree add -P tests gdc-haskell-homework-tests master  --squash
-
 # To update subtree at a later date,
 git fetch gdc-haskell-homework-tests master
 git subtree pull -P tests gdc-haskell-homework-tests master --squash
