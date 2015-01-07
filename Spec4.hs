@@ -35,3 +35,11 @@ main = hspec $ do
       allCaps ["", "Blah"] `shouldBe` False
     it "should fail with fail input." $ do
       allCaps ["Hi","there"] `shouldBe` False
+
+  describe "dropTrailingWhitespace" $ do
+    it "should return same which does not have trailing whitespace" $ do
+      dropTrailingWhitespace "foo" `shouldBe` "foo"
+    it "should can get empty string as input" $ do
+      dropTrailingWhitespace "" `shouldBe` ""
+    it "should remove trailing whitespace " $ do
+      dropTrailingWhitespace "bar  " `shouldBe` "bar"
