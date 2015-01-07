@@ -40,6 +40,11 @@ cabal install --only-dependencies
 
 ```
 
+Write your code
+---------------
+
+Cabal project file is written as if your code is located in `src/`.
+
 How to run test
 -------------
 
