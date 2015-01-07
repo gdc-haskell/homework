@@ -43,3 +43,13 @@ main = hspec $ do
       dropTrailingWhitespace "" `shouldBe` ""
     it "should remove trailing whitespace " $ do
       dropTrailingWhitespace "bar  " `shouldBe` "bar"
+
+  describe "firstLetters" $ do
+    it "should return first letters" $ do
+      firstLetters [ "foo", "bar" ] `shouldBe` [ 'f', 'b' ]
+    it "should ignore empty string" $ do
+      firstLetters [ "foo", "" ] `shouldBe` [ 'f' ]
+    it "should return empty list when input empty" $ do
+      firstLetters [ ] `shouldBe` [ ]
+    it "should return empty list when input is all empty string" $ do
+      firstLetters [ "", "" ] `shouldBe` [ ]
