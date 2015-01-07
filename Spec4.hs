@@ -53,3 +53,11 @@ main = hspec $ do
       firstLetters [ ] `shouldBe` [ ]
     it "should return empty list when input is all empty string" $ do
       firstLetters [ "", "" ] `shouldBe` [ ]
+
+  describe "asList" $ do
+    it "should concat strings" $ do
+      asList ["alpha","beta","gamma"] `shouldBe` "[alpha,beta,gamma]"
+    it "should get empty list" $ do
+      asList [] `shouldBe` "[]"
+    it "should get one argument" $ do
+      asList ["lonely"] `shouldBe` "[lonely]"
