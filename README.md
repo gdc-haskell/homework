@@ -35,8 +35,8 @@ First Setup
 
 # if you want to trap your project in sandbox, run
 # cabal sandbox init
-cabal configure --enable-tests
 cabal install --only-dependencies --enable-tests
+cabal configure --enable-tests
 
 ```
 
