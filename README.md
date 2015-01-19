@@ -35,8 +35,8 @@ First Setup
 
 # if you want to trap your project in sandbox, run
 # cabal sandbox init
-cabal configure --enable-tests
 cabal install --only-dependencies --enable-tests
+cabal configure --enable-tests
 
 ```
 
@@ -75,9 +75,9 @@ How to add tests
 2. Add test case like other tests.
 3. Share with others!
     ```sh
-    
+
     git subtree push -P tests homework-tests master-or-something [--squash]
-    
+
     ```
 
 How to improve homework skeleton
